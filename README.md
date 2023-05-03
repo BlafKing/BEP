@@ -1,6 +1,7 @@
 # BEP - Destiny 2 Golgoroth Maze Checkpoint bot
 
 Hi all, This is a bot I made in AHK for use in Destiny 2.
+(As well as a discord BOT to update the Destiny BOT's status)
 
 I used to host this bot myself, but I am no longer able to.
 If you're interested in reading why I stopped hosting the bot, click [here](https://github.com/tombon12/BEP/blob/main/Reasoning.md)
