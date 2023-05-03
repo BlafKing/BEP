@@ -1,19 +1,19 @@
-﻿CoordMode, Pixel, Screen
+CoordMode, Pixel, Screen
 SetKeyDelay, 20
 detect = 0
 JoinMsg = 0
 TimeMsg = 0
 NoPlayer = 0
 Loop, 120 {
-    ImageSearch, , , 0, 0, 1920, 1080, *5 C:\Users\Bep\Desktop\Bot\Images\BANNERORBIT.png
+    ImageSearch, , , 0, 0, 1920, 1080, *5 PATH\TO\BANNERORBIT.png
     If ErrorLevel = 0
         Goto, Start
 
-    ImageSearch, , , 0, 0, 1920, 1080, *5 C:\Users\Bep\Desktop\Bot\Images\RADARSMALL.png
+    ImageSearch, , , 0, 0, 1920, 1080, *5 PATH\TO\RADARSMALL.png
     If ErrorLevel = 0
         Goto, Helm
 
-    ImageSearch, , , 0, 0, 1920, 1080, *5 C:\Users\Bep\Desktop\Bot\Images\BANNER.png
+    ImageSearch, , , 0, 0, 1920, 1080, *5 PATH\TO\BANNER.png
     If ErrorLevel = 0
         Goto, SelectScan
 
@@ -32,7 +32,7 @@ HelmRetry:
     MouseMove, 960, 540, 5
     Sleep, 500
     Loop, 6 {
-        ImageSearch, , , 0, 0, 1920, 1080, *5 C:\Users\Bep\Desktop\Bot\Images\MAP.png
+        ImageSearch, , , 0, 0, 1920, 1080, *5 PATH\TO\MAP.png
         If ErrorLevel = 0
             Goto, HelmTravel
         Sleep, 500
@@ -44,7 +44,7 @@ HelmRetry:
     MouseMove, 960, 540, 5
     Sleep, 500
     Loop, 6 {
-        ImageSearch, , , 0, 0, 1920, 1080, *5 C:\Users\Bep\Desktop\Bot\Images\MAP.png
+        ImageSearch, , , 0, 0, 1920, 1080, *5 PATH\TO\MAP.png
         If ErrorLevel = 0
             Goto, HelmTravel
         Sleep, 500
@@ -69,11 +69,11 @@ HelmTravel:
     Send, {LButton}
     Sleep, 4000
     Loop, {
-        ImageSearch, , , 0, 0, 1920, 1080, *5 C:\Users\Bep\Desktop\Bot\Images\BANNERORBIT.png
+        ImageSearch, , , 0, 0, 1920, 1080, *5 PATH\TO\BANNERORBIT.png
         If ErrorLevel = 0
             Goto, HelmRetry
 
-        ImageSearch, , , 0, 0, 1920, 1080, *5 C:\Users\Bep\Desktop\Bot\Images\RADARSMALL.png
+        ImageSearch, , , 0, 0, 1920, 1080, *5 PATH\TO\RADARSMALL.png
         If ErrorLevel = 0
             Break
 
@@ -100,7 +100,7 @@ Helm:
     Sleep, 500
     Send, {LButton}
     Sleep, 100
-    run, f13.ahk, C:\Users\Bep\Desktop\Bot\keys
+    run, f13.ahk, PATH\TO\keys
     Sleep, 200
     Send, {LButton}
     Sleep, 500
@@ -123,7 +123,7 @@ Helm:
     Send {LButton}
     Sleep, 1000
     loop, 420 {
-        ImageSearch, , , 1392, 148, 1873, 251, *10 C:\Users\Bep\Desktop\Bot\Images\1.png
+        ImageSearch, , , 1392, 148, 1873, 251, *10 PATH\TO\1.png
         if ErrorLevel = 1
             Goto, Welcome
         Sleep, 1000
@@ -220,18 +220,18 @@ counter.Start()
 
 loop, {
     JoinStartTime := A_TickCount
-    ImageSearch, , , 1392, 572, 1873, 675, *10 C:\Users\Bep\Desktop\Bot\Images\5.png
+    ImageSearch, , , 1392, 572, 1873, 675, *10 PATH\TO\\5.png
     If ErrorLevel = 1
         {
         Sleep, 2000
-        ImageSearch, , , 1392, 572, 1873, 675, *10 C:\Users\Bep\Desktop\Bot\Images\5.png
+        ImageSearch, , , 1392, 572, 1873, 675, *10 PATH\TO\\5.png
         If ErrorLevel = 1
             counter.Stop()
             Goto, Full
         }
     TotalTime += (A_TickCount - JoinStartTime)
     JoinStartTime := A_TickCount
-    ImageSearch, , , 0, 0, 1920, 1080, *5 C:\Users\Bep\Desktop\Bot\Images\JOINBANNER.png
+    ImageSearch, , , 0, 0, 1920, 1080, *5 PATH\TO\\JOINBANNER.png
     If ErrorLevel = 0
         {
         JoinMsg := 1
@@ -274,7 +274,7 @@ loop, {
 CloseMsg() {
     SendRaw, -
     Sleep, 100
-    run, f18.ahk, C:\Users\Bep\Desktop\Bot\keys
+    run, f18.ahk, PATH\TO\keys
     Sleep, 200
 }
 
@@ -337,7 +337,7 @@ Joining:
     MouseMove, 1227, 528, 5
     Sleep, 500
     Loop, 4 {
-        ImageSearch, , , 1392, 148, 1873, 251, *10 C:\Users\Bep\Desktop\Bot\Images\EMPTY.png
+        ImageSearch, , , 1392, 148, 1873, 251, *10 PATH\TO\EMPTY.png
         If ErrorLevel = 0 
             {
             Send {Enter}
@@ -361,7 +361,7 @@ Retry:
     Send, {LButton}
     Sleep, 8000
     Loop, 20 {
-        ImageSearch, , , 0, 0, 1920, 1080, *20 C:\Users\Bep\Desktop\Bot\Images\BANNERORBIT.png
+        ImageSearch, , , 0, 0, 1920, 1080, *20 PATH\TO\BANNERORBIT.png
         If ErrorLevel = 0
             Goto, GolgRetry
 
@@ -373,7 +373,7 @@ Retry:
     Sleep, 100
     Send, {Enter}
     Loop, 35 {
-        ImageSearch, , , 0, 0, 1920, 1080, *20 C:\Users\Bep\Desktop\Bot\Images\BANNERORBIT.png
+        ImageSearch, , , 0, 0, 1920, 1080, *20 PATH\TO\BANNERORBIT.png
         If ErrorLevel = 0
             Goto, GolgRetry
 
@@ -385,7 +385,7 @@ Retry:
     Sleep, 100
     Send, {Enter}
     Loop, 30 {
-        ImageSearch, , , 0, 0, 1920, 1080, *20 C:\Users\Bep\Desktop\Bot\Images\BANNERORBIT.png
+        ImageSearch, , , 0, 0, 1920, 1080, *20 PATH\TO\BANNERORBIT.png
         If ErrorLevel = 0
             Goto, GolgRetry
 
@@ -409,11 +409,11 @@ Retry:
         If ErrorLevel = 0
             Goto, End
 
-        ImageSearch, , , 0, 0, 1920, 1080, *20 C:\Users\Bep\Desktop\Bot\Images\BANNERORBIT.png
+        ImageSearch, , , 0, 0, 1920, 1080, *20 PATH\TO\BANNERORBIT.png
         If ErrorLevel = 0
             Goto, GolgRetry
 
-        ImageSearch, , , 0, 0, 1920, 1080, *5 C:\Users\Bep\Desktop\Bot\Images\MAP.png
+        ImageSearch, , , 0, 0, 1920, 1080, *5 PATH\TO\MAP.png
         If ErrorLevel = 0
             Goto, Relaunch
         
@@ -447,7 +447,7 @@ End:
 
 SelectScan:
     loop, 100 {
-        ImageSearch, , , 0, 0, 1920, 1080, C:\Users\Bep\Desktop\Bot\Images\BANNER.png
+        ImageSearch, , , 0, 0, 1920, 1080, PATH\TO\BANNER.png
         If ErrorLevel = 0
             Goto, Selecting
 
@@ -477,7 +477,7 @@ GolgRetry:
     MouseMove, 960, 540, 5
     Sleep, 500
     Loop, 6 {
-        ImageSearch, , , 0, 0, 1920, 1080, *5 C:\Users\Bep\Desktop\Bot\Images\MAP.png
+        ImageSearch, , , 0, 0, 1920, 1080, *5 PATH\TO\MAP.png
         If ErrorLevel = 0
             Goto, Relaunch
 
@@ -490,7 +490,7 @@ GolgRetry:
     MouseMove, 960, 540, 5
     Sleep, 500
     Loop, 6 {
-        ImageSearch, , , 0, 0, 1920, 1080, *5 C:\Users\Bep\Desktop\Bot\Images\MAP.png
+        ImageSearch, , , 0, 0, 1920, 1080, *5 PATH\TO\MAP.png
         If ErrorLevel = 0
             Goto, Relaunch
 
@@ -562,7 +562,7 @@ Empty:
     Sleep, 300
     Send, {LButton}
     loop, 80 {
-        ImageSearch, , , 0, 0, 1920, 1080, *40 C:\Users\Bep\Desktop\Bot\Images\INTRO.png
+        ImageSearch, , , 0, 0, 1920, 1080, *40 PATH\TO\INTRO.png
         If ErrorLevel = 0
         {
             Send, {Enter}
