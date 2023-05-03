@@ -12,5 +12,5 @@ There's probably many ways that my code can be improved since I'm not at all a g
 
 You are free to do whatever you want this code.
 
-# FAQ
+# General Info
 
