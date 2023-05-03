@@ -12,9 +12,10 @@ Account Termination: The user's account gets disabled and then deleted later. Th
 
 Permanent Ban: The user is permanently banned from Discord. If the user had a phone number added to their account, their phone number is blacklisted from being used on any other account and a phone verification will be set on the user's IP address. They are not allowed to use Discord again.
 ```
-Because of this, I had to create a new Discord BOT and lose everything on my old account and BOT.
 
 I never received any email by Discord stating anything about my account being banned, I didn't know why/how/when my account was banned, I could only guess.
+
+I assumed I received an account termination, since again, I had to guess. This meant I had to create a new Discord BOT and lose all my conversations on the old account.
 
 After this happened I tried contacting Discord multiple times about the issue, but each time I just received an automated email stating "the account would not be re-instated" without being given any reasoning, I was completely unable to speak to a human every time I attempted to contact them.
 
