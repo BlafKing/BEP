@@ -2,8 +2,9 @@
 
 Hi all, This is a bot I made in AHK for use in Destiny 2.
 
-I used to host this bot myself, but I am no longer able to, I won't go into too much detail but it's
-mostly due to complications with Discord (garbage company) but it also wasn't financially viable for me.
+I used to host this bot myself, but I am no longer able to.
+
+I won't go into too much detail but it's mostly due to complications with Discord (unrightfully repeatedly getting banned because of this bot due to bad moderation) but it also wasn't financially viable for me.
 
 However, in case anyone wants to take on hosting this bot, feel free to use any of my code.
 I have based this bot around a 1920x1080 resolution, so all the button presses will corelate to that resolution.
