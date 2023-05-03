@@ -1,0 +1,1 @@
+Taskkill /IM Pythonw.exe /F
