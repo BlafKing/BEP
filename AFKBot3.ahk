@@ -4,6 +4,7 @@ detect = 0
 JoinMsg = 0
 TimeMsg = 0
 NoPlayer = 0
+
 Helm:
     Send, {Left}
     Sleep, 500
@@ -25,7 +26,7 @@ Helm:
     Sleep, 500
     Send, {LButton}
     Sleep, 100
-    run, f13.ahk, C:\Users\Bep\Desktop\Bot\keys
+    run, f13.ahk, PATH\TO\keys
     Sleep, 200
     Send, {LButton}
     Sleep, 500
@@ -48,7 +49,7 @@ Helm:
     Send {LButton}
     Sleep, 1000
     loop, 420 {
-        ImageSearch, , , 1392, 148, 1873, 251, *10 C:\Users\Bep\Desktop\Bot\Images\1.png
+        ImageSearch, , , 1392, 148, 1873, 251, *10 PATH\TO\1.png
         if ErrorLevel = 1
             Goto, Welcome
         Sleep, 1000
@@ -56,7 +57,6 @@ Helm:
     NoPlayer := 1
     Goto, Welcome
 Welcome:
-    run, f20.ahk, C:\Users\Bep\Desktop\Bot\keys
     Sleep, 2000 
     Send, {Enter}
     Sleep, 200
@@ -88,6 +88,7 @@ class AnnounceCounter {
     }
     Start() {
         this.count := 1
+        run, f20.ahk, C:\Users\Bep\Desktop\Bot\keys
         timer := this.timer
         SetTimer % timer, % this.interval
     }
@@ -145,18 +146,18 @@ counter.Start()
 
 loop, {
     JoinStartTime := A_TickCount
-    ImageSearch, , , 1392, 572, 1873, 675, *10 C:\Users\Bep\Desktop\Bot\Images\5.png
+    ImageSearch, , , 1392, 572, 1873, 675, *10 PATH\TO\\5.png
     If ErrorLevel = 1
         {
         Sleep, 2000
-        ImageSearch, , , 1392, 572, 1873, 675, *10 C:\Users\Bep\Desktop\Bot\Images\5.png
+        ImageSearch, , , 1392, 572, 1873, 675, *10 PATH\TO\\5.png
         If ErrorLevel = 1
             counter.Stop()
             Goto, Full
         }
     TotalTime += (A_TickCount - JoinStartTime)
     JoinStartTime := A_TickCount
-    ImageSearch, , , 0, 0, 1920, 1080, *5 C:\Users\Bep\Desktop\Bot\Images\JOINBANNER.png
+    ImageSearch, , , 0, 0, 1920, 1080, *5 PATH\TO\\JOINBANNER.png
     If ErrorLevel = 0
         {
         JoinMsg := 1
@@ -199,7 +200,7 @@ loop, {
 CloseMsg() {
     SendRaw, -
     Sleep, 100
-    run, f18.ahk, C:\Users\Bep\Desktop\Bot\keys
+    run, f18.ahk, PATH\TO\keys
     Sleep, 200
 }
 
@@ -246,7 +247,7 @@ Closing:
 
 Full:
     counter.Stop()
-    Full := 0
+    Full := 1
     CloseMsg()
     Sleep, 200
     Send, {Enter}
@@ -262,7 +263,7 @@ Joining:
     MouseMove, 1227, 528, 5
     Sleep, 500
     Loop, 4 {
-        ImageSearch, , , 1392, 148, 1873, 251, *10 C:\Users\Bep\Desktop\Bot\Images\EMPTY.png
+        ImageSearch, , , 1392, 148, 1873, 251, *10 PATH\TO\EMPTY.png
         If ErrorLevel = 0 
             {
             Send {Enter}
@@ -286,7 +287,7 @@ Retry:
     Send, {LButton}
     Sleep, 8000
     Loop, 20 {
-        ImageSearch, , , 0, 0, 1920, 1080, *20 C:\Users\Bep\Desktop\Bot\Images\BANNERORBIT.png
+        ImageSearch, , , 0, 0, 1920, 1080, *20 PATH\TO\BANNERORBIT.png
         If ErrorLevel = 0
             Goto, GolgRetry
 
@@ -298,7 +299,7 @@ Retry:
     Sleep, 100
     Send, {Enter}
     Loop, 35 {
-        ImageSearch, , , 0, 0, 1920, 1080, *20 C:\Users\Bep\Desktop\Bot\Images\BANNERORBIT.png
+        ImageSearch, , , 0, 0, 1920, 1080, *20 PATH\TO\BANNERORBIT.png
         If ErrorLevel = 0
             Goto, GolgRetry
 
@@ -310,7 +311,7 @@ Retry:
     Sleep, 100
     Send, {Enter}
     Loop, 30 {
-        ImageSearch, , , 0, 0, 1920, 1080, *20 C:\Users\Bep\Desktop\Bot\Images\BANNERORBIT.png
+        ImageSearch, , , 0, 0, 1920, 1080, *20 PATH\TO\BANNERORBIT.png
         If ErrorLevel = 0
             Goto, GolgRetry
 
@@ -324,7 +325,7 @@ Retry:
     Sleep, 200
     Send, {Enter}
     Sleep, 100
-    SendRaw, paypal.me/JeJongen
+    SendRaw, bepbot.nl/donate
     Sleep, 100
     Send, {Enter}
     Sleep, 400
@@ -334,11 +335,11 @@ Retry:
         If ErrorLevel = 0
             Goto, End
 
-        ImageSearch, , , 0, 0, 1920, 1080, *20 C:\Users\Bep\Desktop\Bot\Images\BANNERORBIT.png
+        ImageSearch, , , 0, 0, 1920, 1080, *20 PATH\TO\BANNERORBIT.png
         If ErrorLevel = 0
             Goto, GolgRetry
 
-        ImageSearch, , , 0, 0, 1920, 1080, *5 C:\Users\Bep\Desktop\Bot\Images\MAP.png
+        ImageSearch, , , 0, 0, 1920, 1080, *5 PATH\TO\MAP.png
         If ErrorLevel = 0
             Goto, Relaunch
         
@@ -372,7 +373,7 @@ End:
 
 SelectScan:
     loop, 100 {
-        ImageSearch, , , 0, 0, 1920, 1080, C:\Users\Bep\Desktop\Bot\Images\BANNER.png
+        ImageSearch, , , 0, 0, 1920, 1080, PATH\TO\BANNER.png
         If ErrorLevel = 0
             Goto, Selecting
 
@@ -386,7 +387,7 @@ Selecting:
     Sleep, 500
     Send, {LButton}
     Sleep, 500
-    run AFKBot2.ahk
+    run, AFKBot2.ahk
     ExitApp
 
 GolgRetry:
@@ -402,7 +403,7 @@ GolgRetry:
     MouseMove, 960, 540, 5
     Sleep, 500
     Loop, 6 {
-        ImageSearch, , , 0, 0, 1920, 1080, *5 C:\Users\Bep\Desktop\Bot\Images\MAP.png
+        ImageSearch, , , 0, 0, 1920, 1080, *5 PATH\TO\MAP.png
         If ErrorLevel = 0
             Goto, Relaunch
 
@@ -415,7 +416,7 @@ GolgRetry:
     MouseMove, 960, 540, 5
     Sleep, 500
     Loop, 6 {
-        ImageSearch, , , 0, 0, 1920, 1080, *5 C:\Users\Bep\Desktop\Bot\Images\MAP.png
+        ImageSearch, , , 0, 0, 1920, 1080, *5 PATH\TO\MAP.png
         If ErrorLevel = 0
             Goto, Relaunch
 
@@ -478,7 +479,8 @@ Empty:
     SendRaw, -
     Sleep, 1000
     Send !{f4}
-    Sleep, 5000
+    Sleep, 4000
+    Run, destinyshutdown.bat, C:\Users\Bep\Desktop\Bot
     CoordMode, Mouse, Screen
     MouseMove, 113, 444, 5
     sleep, 200
@@ -486,7 +488,7 @@ Empty:
     Sleep, 300
     Send, {LButton}
     loop, 80 {
-        ImageSearch, , , 0, 0, 1920, 1080, *40 C:\Users\Bep\Desktop\Bot\Images\INTRO.png
+        ImageSearch, , , 0, 0, 1920, 1080, *40 PATH\TO\INTRO.png
         If ErrorLevel = 0
         {
             Send, {Enter}
