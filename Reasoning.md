@@ -17,7 +17,7 @@ I never received any email by Discord stating anything about my account being ba
 
 I assumed I received an account termination, since again, I had to guess. This meant I had to create a new Discord BOT and lose all my conversations on the old account.
 
-After this happened I tried contacting Discord multiple times about the issue, but each time I just received an automated email stating "the account would not be re-instated" without being given any reasoning, I was completely unable to speak to a human every time I attempted to contact them.
+After this happened I tried contacting Discord multiple times about the issue, but each time I just received an automated email stating "the account would not be re-instated" without being given any reasoning, I have never been able to speak to a human every time I attempted to contact them.
 
 After creating a new account, all was well for about 2 weeks, until suddenly, that account has now gotten banned as well.
 
