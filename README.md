@@ -17,7 +17,7 @@ You are free to do whatever you want this code.
 
 Destiny 2 BOT
 
-These
+These files are used for the BOT:
 
 - AFKBot1.AHK & AFKBot2.AHK are basically the same file, once one is completed it opens the other, I used this method because I remotely connected to the PC hosting this bot and then I could edit both files without the need to restart any AHK script, it would use the updates files once either one has finished
 
@@ -26,6 +26,9 @@ These
 - Slots.AHK This file is ran when watching the player slots to detect when players join, when started, it initially sets the player count to 1 and adjusts it until the lobby is full, or the timer kills the script.
 
 - SlotsEmpty.AHK This file is ran once the 7 minute timer has passed and no players have joined, it's the same as slots.ahk except it doesn't set the player count to 1.
+
+Additional Info:
+This bot primarely uses image detection for many parts of the script, I have included all the pictures I used, but you will need to take your own screenshots for some of them.
 
 Discord BOT
 
