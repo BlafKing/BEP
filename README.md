@@ -14,3 +14,18 @@ You are free to do whatever you want this code.
 
 # General Info
 
+Destiny 2 BOT
+
+- AFKBot1.AHK & AFKBot2.AHK are basically the same file, once one is completed it opens the other, I used this method because I remotely connected to the PC hosting this bot and then I could edit both files without the need to restart any AHK script, it would use the updates files once either one has finished
+
+- AFKBot3.AHK starts from the HELM, since I use image detection on the top left radar to see when the player is in the HELM, if you ever move the mouse while in the helm, It won't detect the player being in the helm, so AFKBOT3 is for when you are at the helm, have moved the mouse and want to start the script.
+
+- Slots.AHK I run this file each time a player is detected, so it sets the player count to 1 and starts detecting new players.
+
+- SlotsEmpty.AHK I run this file once the 7 minute timer has passed and no players have joined, this way the server won't get kicked for being AFK in the HELM and if there are other problems, it will eventually restart.
+
+Discord BOT
+
+- Channels.pyw receives commands 
+
+- Updates/Messages.pyw Updates all the servers the discord bot is inside of with the live status.
