@@ -11,3 +11,6 @@ I have based this bot around a 1920x1080 resolution, so all the button presses w
 There's probably many ways that my code can be improved since I'm not at all a good programmer, however this repository is not intended to be used to improve the code, just to share it.
 
 You are free to do whatever you want this code.
+
+# FAQ
+
