@@ -2,7 +2,7 @@
 
 Hi all, unfortunately I can no longer keep hosting this bot for multiple reasons:
 
-Primarely, it's caused by Discord, I used to host this bot exclusively on a Discord server called LuckStruck9, however I used a `user discord bot` to update the messages.
+Primarely, it's caused by Discord, I used to host this bot exclusively on a Discord server called LuckStruck9, however at first I used a `user discord bot` to update the messages.
 Later on I found out making and using a user bot is not allowed by Discord's TOS and my main account got permanently banned for this.
 
 There are 2 types of bans on discord:
@@ -12,7 +12,7 @@ Account Termination: The user's account gets disabled and then deleted later. Th
 
 Permanent Ban: The user is permanently banned from Discord. If the user had a phone number added to their account, their phone number is blacklisted from being used on any other account and a phone verification will be set on the user's IP address. They are not allowed to use Discord again.
 ```
-Because of this, I had to create a new Discord BOT and lose everything on my old account.
+Because of this, I had to create a new Discord BOT and lose everything on my old account and BOT.
 
 I never received any email by Discord stating anything about my account being banned, I didn't know why/how/when my account was banned, I could only guess.
 
