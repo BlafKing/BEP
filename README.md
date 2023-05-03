@@ -20,9 +20,9 @@ Destiny 2 BOT
 
 - AFKBot3.AHK starts from the HELM, since I use image detection on the top left radar to see when the player is in the HELM, if you ever move the mouse while in the helm, It won't detect the player being in the helm, so AFKBOT3 is for when you are at the helm, have moved the mouse and want to start the script.
 
-- Slots.AHK This file is ran each time a player is detected, so it sets the player count to 1 and starts detecting new players.
+- Slots.AHK This file is ran when watching the player slots to detect when players join, when started, it initially sets the player count to 1 and adjusts it until the lobby is full, or the timer kills the script.
 
-- SlotsEmpty.AHK This file is ran once the 7 minute timer has passed and no players have joined, this way the server won't get kicked for being AFK in the HELM and if there are other problems, it will eventually restart.
+- SlotsEmpty.AHK This file is ran once the 7 minute timer has passed and no players have joined, it's the same as slots.ahk except it doesn't set the player count to 1.
 
 Discord BOT
 
