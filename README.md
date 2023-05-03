@@ -16,6 +16,8 @@ You are free to do whatever you want this code.
 
 Destiny 2 BOT
 
+These
+
 - AFKBot1.AHK & AFKBot2.AHK are basically the same file, once one is completed it opens the other, I used this method because I remotely connected to the PC hosting this bot and then I could edit both files without the need to restart any AHK script, it would use the updates files once either one has finished
 
 - AFKBot3.AHK starts from the HELM, since I use image detection on the top left radar to see when the player is in the HELM, if you ever move the mouse while in the helm, It won't detect the player being in the helm, so AFKBOT3 is for when you are at the helm, have moved the mouse and want to start the script.
