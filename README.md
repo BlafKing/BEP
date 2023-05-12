@@ -13,6 +13,8 @@ There's probably many ways that my code can be improved since I'm not at all a g
 
 You are free to do whatever you want this code.
 
+If you have any questions about the code feel free to open a question in the Issues tab!
+
 # General Info
 
 Destiny 2 BOT
